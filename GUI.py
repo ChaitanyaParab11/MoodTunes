@@ -10,31 +10,24 @@ import random
 import pandas as pd
 
 
-
-# def combine_funcs(*funcs):
-#     def inner_combined_func(*args, **kwargs):
-#         for f in funcs:
-#             f(*args, **kwargs)
-  
-#     return inner_combined_func
- 
-
 def fun1():
     vid = cv2.VideoCapture(0)
-    while(True):
-        
+    while (True):
+
         ret, frame = vid.read()
-        break
 
+        cv2.imshow('frame', frame)
 
-    result = DeepFace.analyze(frame,actions=['emotion'])
+        if cv2.waitKey(1000):
+            break
 
-    dom_emo=result[0]['dominant_emotion']
+    result = DeepFace.analyze(frame, actions=['emotion'])
+
+    dom_emo = result[0]['dominant_emotion']
     print(dom_emo)
 
     vid.release()
     cv2.destroyAllWindows()
-    
 
     if (dom_emo == 'happy'):
         df = pd.read_csv(
@@ -64,8 +57,7 @@ def fun1():
         df = pd.read_csv(
             'C:/Users/CHAITANYA/OneDrive/Desktop/Internet Programming/src/css/neutral.csv')
         sname = df.song
-        
-    
+
     nrow = len(sname.axes[0])
 
     ran = random.randint(0, nrow)
@@ -99,7 +91,6 @@ def fun1():
     label_2.pack(side="right", fill="both", expand=True)
 
 
-
 ck.set_appearance_mode("system")
 ck.set_default_color_theme("blue")
 
@@ -107,7 +98,7 @@ ck.set_default_color_theme("blue")
 root = ck.CTk()
 root.geometry("900x500")
 root.title(" MoodTunes ")
-#root.iconbitmap("favicon.ico")
+# root.iconbitmap("favicon.ico")
 
 
 frame1 = ck.CTkFrame(root, width=400, height=200)
@@ -116,9 +107,9 @@ label1_1 = ck.CTkLabel(frame1, text=" Play Song Based On Your Emotions")
 label_3 = ck.CTkLabel(frame1, text=" Changed ")
 
 label1.pack()
-label1_1.pack() 
+label1_1.pack()
 
-Trainbutton = ck.CTkButton(frame1, text="Change Your Song", command= fun1)
+Trainbutton = ck.CTkButton(frame1, text="Change Your Song", command=fun1)
 Trainbutton.pack()
 
 
