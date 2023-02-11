@@ -31,31 +31,31 @@ def fun1():
 
     if (dom_emo == 'happy'):
         df = pd.read_csv(
-            'C:/Users/CHAITANYA/OneDrive/Desktop/Internet Programming/src/css/happy.csv')
+            'assets/happy.csv')
         sname = df.song
     elif (dom_emo == 'sad'):
         df = pd.read_csv(
-            'C:/Users/CHAITANYA/OneDrive/Desktop/Internet Programming/src/css/sad.csv')
+            'assets/sad.csv')
         sname = df.song
     elif (dom_emo == 'surprise'):
         df = pd.read_csv(
-            'C:/Users/CHAITANYA/OneDrive/Desktop/Internet Programming/src/css/surprise.csv')
+            'assets/surprise.csv')
         sname = df.song
     elif (dom_emo == 'fear'):
         df = pd.read_csv(
-            'C:/Users/CHAITANYA/OneDrive/Desktop/Internet Programming/src/css/fear.csv')
+            'assets/fear.csv')
         sname = df.song
     elif (dom_emo == 'angry'):
         df = pd.read_csv(
-            'C:/Users/CHAITANYA/OneDrive/Desktop/Internet Programming/src/css/angry.csv')
+            'assets/angry.csv')
         sname = df.song
     elif (dom_emo == 'disgust'):
         df = pd.read_csv(
-            'C:/Users/CHAITANYA/OneDrive/Desktop/Internet Programming/src/css/disgust.csv')
+            'assets/disgust.csv')
         sname = df.song
     elif (dom_emo == 'neutral'):
         df = pd.read_csv(
-            'C:/Users/CHAITANYA/OneDrive/Desktop/Internet Programming/src/css/neutral.csv')
+            'assets/neutral.csv')
         sname = df.song
 
     nrow = len(sname.axes[0])
