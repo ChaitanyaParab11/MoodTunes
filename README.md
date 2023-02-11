@@ -11,14 +11,14 @@ Shaikh Mohd Shoeb
 Shaikh Mudasser Ali
 
 
-Project Title - MoodTunes
+#Project Title - MoodTunes
 
 Designing a music recommendation system that incorporates emotion detection from facial expressions to personalize music recommendations for users.
 
 
 
 
-The problem MoodTunes solves
+#The problem MoodTunes solves
 
 Mood-based Music Recommendation: The app can use facial recognition technology to detect the user's current mood, and then recommend music that aligns with that mood, such as happy or energetic music for a positive mood and relaxing or soothing music for a more relaxed or calm mood.
 
@@ -35,7 +35,7 @@ Music Discovery: Users can discover new music that they may not have found other
 
 
 
-Challenges we ran into
+#Challenges we ran into
 
 Integrating our project
 Finding latest libraries
