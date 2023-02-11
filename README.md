@@ -11,7 +11,7 @@ Shaikh Mohd Shoeb
 Shaikh Mudasser Ali
 
 
-#Project Title - MoodTunes
+# Project Title - MoodTunes
 
 Designing a music recommendation system that incorporates emotion detection from facial expressions to personalize music recommendations for users.
 
